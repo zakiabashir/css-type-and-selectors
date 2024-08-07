@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shafey Kids</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+    <!-- Internal CSS -->
+    <style> 
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('nature1.jpeg');
+            background-size: cover;
+            margin: 0;
+        }
+
+        .container {
+           
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 5px;
+        }
+
+        #main-heading {
+            text-align: center;
+            color: rgb(239, 239, 26);
+        }
+
+        .container p {
+            margin: 10px 0;
+            padding-bottom: 5px;
+        }
+
+        .container > ul > li {
+            list-style-type: square;
+        }
+
+        a[href*="example"] {
+            color: rgb(150, 247, 4);
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #440a0a;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: rgb(243, 245, 247);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .nav-links a:hover {
+            color: #ff6347;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align:center;
+                background: #333;
+                
+            }
+
+            .nav-links.active {
+                display: flex;
+                
+            }
+
+            .burger {
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .burger div {
+                width: 25px;
+                height: 3px;
+                background: white;
+                border-radius: 2px;
+            }
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .gallery-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .gallery-container img {
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .gallery-container img {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Shafey Kids</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#activities">Activities</a>
+            <a href="#events">Events</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <header style=" padding: 10px;"> <!-- Inline CSS -->
+        <h1 id="main-heading">Welcome to Shafey Kids</h1>
+    </header>
+    <div class="container" id="home">
+        <section id="about">
+            <h2>About Shafey Kids</h2>
+            <p>Shafey Kids is a fun and educational platform for children. We offer a variety of activities and resources to engage and inspire young minds.</p>
+            <p>Explore our site to find exciting games, informative articles, and much more.</p>
+            <ul>
+                <li>Interactive Games</li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deserunt, tenetur animi quasi illo voluptatibus alias laudantium quibusdam dolorem inventore officiis harum beatae expedita eveniet cum? Animi non explicabo est?
+                In, modi dicta architecto vitae quia fuga officiis ullam minus, laboriosam maiores tenetur quibusdam officia ipsa, quas blanditiis delectus itaque! Vel, corrupti a temporibus consequatur dolore quis dolor eum minus!
+                Nam, eos provident ratione voluptatum debitis mollitia ullam! Earum officia voluptatem inventore. Accusamus dignissimos quisquam illo dolorum itaque tempora dolore dolores soluta consequuntur, alias voluptatem! Quisquam, dicta nobis? Repellat, dolorem!
+                Est, atque corrupti quod temporibus dolores obcaecati amet labore necessitatibus omnis rem culpa id odit impedit minus voluptate hic officia iste, excepturi quasi esse. Facilis recusandae est sit a. Illum?
+                Harum labore aliquam commodi accusantium a accusamus voluptate magnam, quia voluptates earum voluptas, maiores odio! Dolor iste quia culpa facilis incidunt quisquam magni cum natus, quod ipsum atque a obcaecati.
+                Nulla beatae dolore, veritatis tenetur aliquid harum enim dolor magnam nihil facere commodi labore corporis pariatur ratione fuga perferendis iste vitae iure est reiciendis, earum alias. Aperiam officia ipsum nihil?
+                Qui eligendi assumenda voluptas autem veritatis. Sed, sapiente est commodi repellat fuga quo facere eligendi omnis ullam provident. Vel quis eum minus rerum, numquam at. Nesciunt aliquid soluta iusto corrupti?
+                Asperiores quasi vero natus iusto modi! Laboriosam tempora voluptates, ratione impedit voluptate quisquam eveniet consequatur accusamus placeat molestiae et, debitis optio saepe iste fuga eligendi cupiditate tempore quasi. Ut, illum.</p>
+                <li>Educational Articles</li>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, rem impedit sequi pariatur, dignissimos doloribus debitis assumenda necessitatibus culpa officiis dolor possimus ad excepturi similique nisi non, eius labore rerum.
+                    Minus ullam delectus cupiditate sint iure nesciunt ad consequatur sapiente nisi, quibusdam veritatis ex doloremque odit vero iste quo quidem qui cum facere sed aliquam provident commodi ipsam? Nemo, dicta?
+                    Modi ex possimus est amet accusantium dolorum fugiat eum, suscipit atque repellat saepe, placeat harum? Unde, eveniet numquam magnam eos laudantium commodi omnis ex ipsam debitis, at sint libero ea.
+                    Quisquam distinctio esse minima aut sequi voluptas quod iste recusandae obcaecati, nobis nostrum ipsa doloremque voluptatibus enim suscipit, atque vitae laudantium odio aspernatur. Ipsa aut ipsum ut saepe, error accusamus.
+                    Quo eligendi odit officia quae aperiam ipsum ab similique quos voluptatum nesciunt fugiat, inventore pariatur neque odio nam suscipit obcaecati, temporibus nemo cumque sint aliquid voluptas! Perferendis voluptates cupiditate tenetur.
+                    Rerum laboriosam quam ipsa, dolorem at modi repellat earum obcaecati cum! In delectus placeat eos non earum suscipit culpa! Atque nostrum nobis, dignissimos unde exercitationem placeat ad esse praesentium et.
+                    Nostrum assumenda iure molestias nihil illum provident, quidem illo repellendus atque. Molestiae adipisci doloribus debitis, consequuntur odit quas laborum aliquid! Aliquid suscipit sint voluptatum placeat autem consectetur omnis, nostrum quos!
+                    Dicta quidem voluptatum illum, laboriosam consectetur possimus ab quis exercitationem officia sint porro? Assumenda explicabo, tempore optio repellat autem unde quaerat corrupti ut soluta in, placeat id, repudiandae aspernatur voluptatibus.
+                </p>
+                <li>Creative Activities</li>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem officiis magni alias sit laborum animi blanditiis deleniti aliquam. Id recusandae at est quo quod tenetur doloribus! Nam, totam quia. Harum.
+                    Dolorum reprehenderit alias deserunt blanditiis veniam commodi quasi laboriosam, consectetur debitis distinctio temporibus voluptates eum libero beatae qui natus ea est officia voluptatem pariatur provident! Ipsa officia eos quisquam qui?
+                    Ipsa, doloribus distinctio! Blanditiis fugiat explicabo odio, sequi, laboriosam est modi quam, exercitationem soluta quasi necessitatibus laudantium rem? Laudantium modi adipisci totam fugiat facilis est inventore dicta unde fuga eligendi?
+                    Harum eum, cum vero nihil eius voluptatem velit aspernatur quos est facere, quis id dolorum quasi reprehenderit quibusdam temporibus, dolorem voluptates? Quod illo autem maiores praesentium assumenda quas necessitatibus sit?
+                    Vel sint aut, nemo blanditiis exercitationem quos minus veniam fugit odio quas quibusdam harum perspiciatis nulla nisi iusto, doloribus eius quod. Unde reprehenderit reiciendis quam non ratione expedita nemo impedit?
+                    Officiis qui culpa ipsa minima? Voluptate, qui tempore aspernatur voluptates sed, inventore perspiciatis exercitationem nemo quis omnis deleniti neque voluptatum debitis odit velit quos soluta doloremque eaque? Praesentium, earum. Voluptas.
+                    Obcaecati ipsum laboriosam rerum quidem, facere quasi voluptas, ea quo quibusdam eos corrupti ducimus harum at error debitis et molestiae veritatis. Veniam repellat ullam sit ad itaque! Quidem, quasi omnis.
+                    Minus, suscipit molestiae accusamus placeat amet consequatur beatae qui adipisci ea culpa ex perspiciatis natus perferendis. Odio modi sequi consequuntur suscipit, esse omnis quas amet illum rerum nulla. Unde, dolorum.
+                </p>
+            </ul >
+            <a href="https://www.youtube.com">Visit youtube</a><br><br>
+            <a href="https://www.google.com">Visit Google</a><br><br>
+            <a href="https://www.facebook.com">Visit facebook</a><br><br>
+            <a href="https://www.github.com">Visit github</a><br><br>
+        </section>
+        
+        <section id="activities">
+            <h2>Activities</h2>
+            <p>We provide various activities that help in the holistic development of children.</p>
+            <ul>
+                <li>Art and Craft</li>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque distinctio placeat quidem hic reiciendis ad similique, laboriosam excepturi enim aperiam alias modi perspiciatis vero rem perferendis eum quas corrupti et.
+                    Praesentium nisi voluptate eum sapiente quidem maxime velit, nesciunt repellat a sint sed perspiciatis laborum labore explicabo aperiam obcaecati consequatur eius cum eaque consectetur neque magni culpa. Natus, ipsum. Laudantium!
+                    Dicta dolores magni et ea repudiandae esse ipsum autem laboriosam similique. Laborum quod dolorem recusandae consequuntur rerum. Ut, ratione consectetur cumque, saepe impedit atque rem similique omnis fugiat quasi quos?
+                    Voluptate molestiae quod, veniam voluptates adipisci voluptas incidunt. Amet quisquam nam harum quas voluptatum nobis ullam asperiores, corrupti dolorum quod tempore nulla repellat adipisci odio natus aliquid, alias suscipit nesciunt!
+                    Sapiente beatae vitae error culpa! Quae necessitatibus consequatur incidunt ab ad porro aut ea est reiciendis ipsam minima impedit eum eos, aliquam quos ratione ipsa distinctio expedita sunt quod modi.
+                    Blanditiis, placeat optio sapiente, inventore repellat aperiam unde temporibus est error soluta distinctio necessitatibus nostrum praesentium obcaecati doloribus cum veritatis! Corporis non doloribus omnis blanditiis perspiciatis saepe! Velit, totam illo?
+                    Quam obcaecati consectetur nulla ullam tempora temporibus harum itaque officia unde. Corporis obcaecati, sapiente sequi vel necessitatibus numquam quam dolorum culpa. Illum sint illo ullam ut voluptatem quidem! Iusto, voluptatum.
+                    Sint consequuntur inventore totam quibusdam enim rem fuga, adipisci architecto aperiam doloremque voluptatem veniam earum, ullam ea eum sunt dicta distinctio eligendi porro soluta! Accusantium eligendi nobis rem facilis beatae?
+                </p>
+                <li>Science Experiments</li>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque distinctio placeat quidem hic reiciendis ad similique, laboriosam excepturi enim aperiam alias modi perspiciatis vero rem perferendis eum quas corrupti et.
+                    Praesentium nisi voluptate eum sapiente quidem maxime velit, nesciunt repellat a sint sed perspiciatis laborum labore explicabo aperiam obcaecati consequatur eius cum eaque consectetur neque magni culpa. Natus, ipsum. Laudantium!
+                    Dicta dolores magni et ea repudiandae esse ipsum autem laboriosam similique. Laborum quod dolorem recusandae consequuntur rerum. Ut, ratione consectetur cumque, saepe impedit atque rem similique omnis fugiat quasi quos?
+                    Voluptate molestiae quod, veniam voluptates adipisci voluptas incidunt. Amet quisquam nam harum quas voluptatum nobis ullam asperiores, corrupti dolorum quod tempore nulla repellat adipisci odio natus aliquid, alias suscipit nesciunt!
+                    Sapiente beatae vitae error culpa! Quae necessitatibus consequatur incidunt ab ad porro aut ea est reiciendis ipsam minima impedit eum eos, aliquam quos ratione ipsa distinctio expedita sunt quod modi.
+                    Blanditiis, placeat optio sapiente, inventore repellat aperiam unde temporibus est error soluta distinctio necessitatibus nostrum praesentium obcaecati doloribus cum veritatis! Corporis non doloribus omnis blanditiis perspiciatis saepe! Velit, totam illo?
+                    Quam obcaecati consectetur nulla ullam tempora temporibus harum itaque officia unde. Corporis obcaecati, sapiente sequi vel necessitatibus numquam quam dolorum culpa. Illum sint illo ullam ut voluptatem quidem! Iusto, voluptatum.
+                    Sint consequuntur inventore totam quibusdam enim rem fuga, adipisci architecto aperiam doloremque voluptatem veniam earum, ullam ea eum sunt dicta distinctio eligendi porro soluta! Accusantium eligendi nobis rem facilis beatae?
+                </p>
+                <li>Sports and Games</li>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque distinctio placeat quidem hic reiciendis ad similique, laboriosam excepturi enim aperiam alias modi perspiciatis vero rem perferendis eum quas corrupti et.
+                    Praesentium nisi voluptate eum sapiente quidem maxime velit, nesciunt repellat a sint sed perspiciatis laborum labore explicabo aperiam obcaecati consequatur eius cum eaque consectetur neque magni culpa. Natus, ipsum. Laudantium!
+                    Dicta dolores magni et ea repudiandae esse ipsum autem laboriosam similique. Laborum quod dolorem recusandae consequuntur rerum. Ut, ratione consectetur cumque, saepe impedit atque rem similique omnis fugiat quasi quos?
+                    Voluptate molestiae quod, veniam voluptates adipisci voluptas incidunt. Amet quisquam nam harum quas voluptatum nobis ullam asperiores, corrupti dolorum quod tempore nulla repellat adipisci odio natus aliquid, alias suscipit nesciunt!
+                    Sapiente beatae vitae error culpa! Quae necessitatibus consequatur incidunt ab ad porro aut ea est reiciendis ipsam minima impedit eum eos, aliquam quos ratione ipsa distinctio expedita sunt quod modi.
+                    Blanditiis, placeat optio sapiente, inventore repellat aperiam unde temporibus est error soluta distinctio necessitatibus nostrum praesentium obcaecati doloribus cum veritatis! Corporis non doloribus omnis blanditiis perspiciatis saepe! Velit, totam illo?
+                    Quam obcaecati consectetur nulla ullam tempora temporibus harum itaque officia unde. Corporis obcaecati, sapiente sequi vel necessitatibus numquam quam dolorum culpa. Illum sint illo ullam ut voluptatem quidem! Iusto, voluptatum.
+                    Sint consequuntur inventore totam quibusdam enim rem fuga, adipisci architecto aperiam doloremque voluptatem veniam earum, ullam ea eum sunt dicta distinctio eligendi porro soluta! Accusantium eligendi nobis rem facilis beatae?
+                </p>
+            </ul>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <p>Stay tuned for our upcoming events that will provide fun and learning for kids.</p>
+            <ul>
+                <li>Science Fair - 25th August</li>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque distinctio placeat quidem hic reiciendis ad similique, laboriosam excepturi enim aperiam alias modi perspiciatis vero rem perferendis eum quas corrupti et.
+                    Praesentium nisi voluptate eum sapiente quidem maxime velit, nesciunt repellat a sint sed perspiciatis laborum labore explicabo aperiam obcaecati consequatur eius cum eaque consectetur neque magni culpa. Natus, ipsum. Laudantium!
+                    Dicta dolores magni et ea repudiandae esse ipsum autem laboriosam similique. Laborum quod dolorem recusandae consequuntur rerum. Ut, ratione consectetur cumque, saepe impedit atque rem similique omnis fugiat quasi quos?
+                    Voluptate molestiae quod, veniam voluptates adipisci voluptas incidunt. Amet quisquam nam harum quas voluptatum nobis ullam asperiores, corrupti dolorum quod tempore nulla repellat adipisci odio natus aliquid, alias suscipit nesciunt!
+                    Sapiente beatae vitae error culpa! Quae necessitatibus consequatur incidunt ab ad porro aut ea est reiciendis ipsam minima impedit eum eos, aliquam quos ratione ipsa distinctio expedita sunt quod modi.
+                    Blanditiis, placeat optio sapiente, inventore repellat aperiam unde temporibus est error soluta distinctio necessitatibus nostrum praesentium obcaecati doloribus cum veritatis! Corporis non doloribus omnis blanditiis perspiciatis saepe! Velit, totam illo?
+                    Quam obcaecati consectetur nulla ullam tempora temporibus harum itaque officia unde. Corporis obcaecati, sapiente sequi vel necessitatibus numquam quam dolorum culpa. Illum sint illo ullam ut voluptatem quidem! Iusto, voluptatum.
+                    Sint consequuntur inventore totam quibusdam enim rem fuga, adipisci architecto aperiam doloremque voluptatem veniam earum, ullam ea eum sunt dicta distinctio eligendi porro soluta! Accusantium eligendi nobis rem facilis beatae?
+                </p>
+                <li>Art Competition - 1st September</li>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque distinctio placeat quidem hic reiciendis ad similique, laboriosam excepturi enim aperiam alias modi perspiciatis vero rem perferendis eum quas corrupti et.
+                    Praesentium nisi voluptate eum sapiente quidem maxime velit, nesciunt repellat a sint sed perspiciatis laborum labore explicabo aperiam obcaecati consequatur eius cum eaque consectetur neque magni culpa. Natus, ipsum. Laudantium!
+                    Dicta dolores magni et ea repudiandae esse ipsum autem laboriosam similique. Laborum quod dolorem recusandae consequuntur rerum. Ut, ratione consectetur cumque, saepe impedit atque rem similique omnis fugiat quasi quos?
+                    Voluptate molestiae quod, veniam voluptates adipisci voluptas incidunt. Amet quisquam nam harum quas voluptatum nobis ullam asperiores, corrupti dolorum quod tempore nulla repellat adipisci odio natus aliquid, alias suscipit nesciunt!
+                    Sapiente beatae vitae error culpa! Quae necessitatibus consequatur incidunt ab ad porro aut ea est reiciendis ipsam minima impedit eum eos, aliquam quos ratione ipsa distinctio expedita sunt quod modi.
+                    Blanditiis, placeat optio sapiente, inventore repellat aperiam unde temporibus est error soluta distinctio necessitatibus nostrum praesentium obcaecati doloribus cum veritatis! Corporis non doloribus omnis blanditiis perspiciatis saepe! Velit, totam illo?
+                    Quam obcaecati consectetur nulla ullam tempora temporibus harum itaque officia unde. Corporis obcaecati, sapiente sequi vel necessitatibus numquam quam dolorum culpa. Illum sint illo ullam ut voluptatem quidem! Iusto, voluptatum.
+                    Sint consequuntur inventore totam quibusdam enim rem fuga, adipisci architecto aperiam doloremque voluptatem veniam earum, ullam ea eum sunt dicta distinctio eligendi porro soluta! Accusantium eligendi nobis rem facilis beatae?
+                </p>
+                <li>Math Olympiad - 15th September</li>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque distinctio placeat quidem hic reiciendis ad similique, laboriosam excepturi enim aperiam alias modi perspiciatis vero rem perferendis eum quas corrupti et.
+                    Praesentium nisi voluptate eum sapiente quidem maxime velit, nesciunt repellat a sint sed perspiciatis laborum labore explicabo aperiam obcaecati consequatur eius cum eaque consectetur neque magni culpa. Natus, ipsum. Laudantium!
+                    Dicta dolores magni et ea repudiandae esse ipsum autem laboriosam similique. Laborum quod dolorem recusandae consequuntur rerum. Ut, ratione consectetur cumque, saepe impedit atque rem similique omnis fugiat quasi quos?
+                    Voluptate molestiae quod, veniam voluptates adipisci voluptas incidunt. Amet quisquam nam harum quas voluptatum nobis ullam asperiores, corrupti dolorum quod tempore nulla repellat adipisci odio natus aliquid, alias suscipit nesciunt!
+                    Sapiente beatae vitae error culpa! Quae necessitatibus consequatur incidunt ab ad porro aut ea est reiciendis ipsam minima impedit eum eos, aliquam quos ratione ipsa distinctio expedita sunt quod modi.
+                    Blanditiis, placeat optio sapiente, inventore repellat aperiam unde temporibus est error soluta distinctio necessitatibus nostrum praesentium obcaecati doloribus cum veritatis! Corporis non doloribus omnis blanditiis perspiciatis saepe! Velit, totam illo?
+                    Quam obcaecati consectetur nulla ullam tempora temporibus harum itaque officia unde. Corporis obcaecati, sapiente sequi vel necessitatibus numquam quam dolorum culpa. Illum sint illo ullam ut voluptatem quidem! Iusto, voluptatum.
+                    Sint consequuntur inventore totam quibusdam enim rem fuga, adipisci architecto aperiam doloremque voluptatem veniam earum, ullam ea eum sunt dicta distinctio eligendi porro soluta! Accusantium eligendi nobis rem facilis beatae?
+                </p>
+            </ul>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-container">
+                <img src="sha.jpeg" alt="Gallery Image 1">
+                <img src="sha2.jpeg" alt="Gallery Image 2">
+                <img src="sha1.jpeg" alt="Gallery Image 3">
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <blockquote>
+                <p>"Shafey Kids has been an incredible platform for my child. The activities are both fun and educational!"</p>
+                <cite>- Parent 1</cite>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A modi omnis ducimus doloribus quidem consequuntur perferendis sapiente sequi. Labore dolore eius repellat velit in obcaecati iure, sequi consequuntur cum facere.
+                Accusamus blanditiis fugiat facilis numquam sapiente dicta facere officia cum, quidem qui consequatur ad vitae amet eaque exercitationem debitis nemo consequuntur et hic labore, sequi magni. Similique animi fuga ad!
+                Consectetur dolores quo ducimus, dolorem odio eos ab dolorum tempore quas excepturi, eaque architecto at rerum quaerat ipsa voluptates? Sit molestias hic quia commodi. Blanditiis, qui. Aliquam ex unde consequatur!
+                Architecto, aut eum id rem accusamus necessitatibus consequuntur eos voluptas quidem at sint ipsa explicabo molestiae dicta quaerat. Error saepe iste fuga reprehenderit perferendis voluptatem totam earum dicta illo ducimus.
+                Laborum, nulla corrupti! Voluptas hic veritatis incidunt aliquid illum in harum, rerum veniam sint quibusdam eveniet numquam laboriosam dignissimos ut odio est at quo ducimus qui culpa, a et eius.
+            </p>
+            </blockquote>
+            <blockquote>
+                <p>"My kids love the interactive games and the learning resources are top-notch!"</p>
+                <cite>- Parent 2</cite>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A modi omnis ducimus doloribus quidem consequuntur perferendis sapiente sequi. Labore dolore eius repellat velit in obcaecati iure, sequi consequuntur cum facere.
+                    Accusamus blanditiis fugiat facilis numquam sapiente dicta facere officia cum, quidem qui consequatur ad vitae amet eaque exercitationem debitis nemo consequuntur et hic labore, sequi magni. Similique animi fuga ad!
+                    Consectetur dolores quo ducimus, dolorem odio eos ab dolorum tempore quas excepturi, eaque architecto at rerum quaerat ipsa voluptates? Sit molestias hic quia commodi. Blanditiis, qui. Aliquam ex unde consequatur!
+                    Architecto, aut eum id rem accusamus necessitatibus consequuntur eos voluptas quidem at sint ipsa explicabo molestiae dicta quaerat. Error saepe iste fuga reprehenderit perferendis voluptatem totam earum dicta illo ducimus.
+                    Laborum, nulla corrupti! Voluptas hic veritatis incidunt aliquid illum in harum, rerum veniam sint quibusdam eveniet numquam laboriosam dignissimos ut odio est at quo ducimus qui culpa, a et eius.
+                </p>
+            </blockquote>
+        </section>
+
+        <section id="contact">
+           <div> 
+            <form action="submit_form.php" method="POST">
+                <h2>Contact Us</h2>
+                <label for="name"> 
+                    Name: &nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit"> Submit </button>
+            </form><br>
+            <h2>LOCATION BY MAP</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14484.18777900102!2d67.08181364999999!3d24.828068150000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33c6ffa24d363%3A0xd4f6e17a243d0167!2sQayyumabad%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1723064674761!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Shafey Kids. All rights reserved.</p>
+    </footer>
+
+    <script> <!-- Inline JavaScript -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.burger');
+            const navLinks = document.querySelector('.nav-links');
+
+            burger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

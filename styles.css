@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('nature.jpeg');
+    background-size: cover;
+    
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
+iframe{
+    width: 100%;
+    border-radius: 20%;
+    
+}
+section{
+    padding-bottom: 40px;
+   padding-left: 20px;
+    background-color: #888;
+}
+
+.container {
+    
+    border: none;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+#main-heading {
+    font-size: 2em;
+}
+
+ul, p {
+    margin-bottom: 20px;
+}
+
+ul li:first-child {
+    color: blue;
+}
+
+h2::after {
+    content: " - Enjoy learning!";
+    color: #888;
+}
+
+nav {
+    background-color: #660b0b;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a:hover {
+    color: #ff6347;
+}
+
+.gallery-container {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery-container img {
+    width: 30%;
+    border-radius: 50px;
+    border:#0ff24f;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background: white;
+        border-radius: 2px;
+    }
